@@ -1,0 +1,698 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: rgba(31, 31, 31, 1)
+}
+
+html {
+    font-size: 16px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.mainButton {
+
+    background-color: var(--mainColor);
+    padding: 10px 35px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
+nav img {
+    height: 70px;
+    width: 128px;
+}
+
+nav ul li {
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+
+header {
+    padding-bottom: 70px;
+}
+
+
+header h1 {
+    font-size: 100px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+}
+
+
+header button {
+    background-color: var(--mainColor);
+    padding: 10px 35px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+}
+
+header .row h2 {
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+header .row i.fa-plus {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+header .blackBrdr_box {
+    width: 150px;
+    height: 130px;
+    border: 1px solid var(--mainColor);
+    background-color: transparent;
+    position: absolute;
+    left: -27px;
+    z-index: -1;
+    top: -22px;
+}
+
+.blackArrow_box {
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .blackArrow_box {
+    width: 150px;
+    height: 130px;
+    border: 1px solid var(--mainColor);
+    background-color: var(--mainColor);
+    position: absolute;
+    right: -27px;
+    /* z-index: -1; */
+    bottom: -0;
+}
+
+
+#sec-1 h2 {
+    text-transform: capitalize;
+    font-size: 37px;
+    position: relative;
+    padding-left: 100px;
+}
+
+#sec-1 h2::before {
+    content: '';
+    position: absolute;
+    width: 73px;
+    height: 2px;
+    background-color: var(--mainColor);
+    left: -1px;
+    top: 23px;
+}
+
+#sec-1 .row img {
+    width: 45px;
+    height: 45px;
+    /* padding: 0 10px; */
+    margin-right: 10px;
+}
+
+#sec-1 p {
+    padding-left: 59px;
+}
+
+#sec-2 {
+    padding: 70px 0;
+}
+
+#sec-2 h2 {
+    font-size: 48px;
+
+}
+
+#sec-2 p {
+    margin: 55px 0;
+    font-weight: 500;
+}
+
+#sec-2 .accordion-item {
+
+    border: none;
+    border-bottom: 1px solid rgb(133, 128, 128);
+    margin-bottom: 13px;
+}
+
+
+#sec-2 .accordion-button::after {
+    content: "+";
+    background-image: none;
+    font-size: 25px;
+
+}
+
+#sec-2 .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(-45deg);
+}
+
+
+
+#sec-3 h2 {
+    margin-bottom: 40px;
+}
+
+#sec-3 article img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+#sec-3 article {
+    /* background-color: seagreen; */
+    width: 80%;
+}
+
+#sec-3 article p {
+    padding-left: 65px;
+    line-height: 30px;
+}
+
+#sec-3 article p.middle {
+    position: relative;
+}
+
+
+
+#sec-3 .row article p.middle::after {
+    content: '';
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: 8px;
+    left: 18px;
+    height: 67px;
+    width: 1px;
+}
+
+#sec-3 .row article p.middle::before {
+    content: '';
+    background-color: var(--mainColor);
+    position: absolute;
+    top: -118px;
+    left: 18px;
+    height: 67px;
+    width: 1px;
+}
+
+
+#sec-4 {
+    padding: 70px 0;
+}
+
+#sec-4 h2 {
+    font-size: 48px;
+}
+
+#sec-4 p {
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+#sec-4 span {
+    justify-content: center;
+    align-items: center;
+    background-color: #bebcbc;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+#sec-4 .fa-quote-left,
+#sec-4 .fa-quote-right {
+    margin-bottom: 50px;
+    display: block;
+    font-size: 40px;
+    color: white;
+}
+
+#sec-4 .personBox img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#sec-4 .personBox h6,
+#sec-4 .personBox p {
+    margin-bottom: 0;
+}
+
+
+
+#sec-4 .floatingDivWrapper .row {
+    width: 167%;
+    padding: 15px !important;
+    position: absolute;
+    bottom: 0;
+    left: -350px;
+
+}
+
+#sec-4 .floatingDivWrapper .row .left,
+#sec-4 .floatingDivWrapper .row .right {
+    width: 48%;
+    padding: 50px 30px;
+}
+
+#sec-4 .floatingDivWrapper .row .left {
+    margin-right: auto;
+}
+
+#sec-4 .floatingDivWrapper .row .right {
+    margin-left: auto;
+}
+
+
+#sec-5 {
+    padding: 70px 0;
+    text-align: center;
+}
+
+#sec-5 h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+#sec-5 p {
+    font-size: 22px
+}
+
+
+#sec-5 img {
+    width: 100px;
+    height: 70px;
+}
+
+
+footer {
+    background-color: var(--mainColor);
+    padding: 70px 0;
+    color: white;
+    position: relative;
+}
+
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer ul li {
+    padding: 10px 0;
+    color: #bbb4b4;
+}
+
+footer .socialBox span {
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 25px 0;
+}
+
+footer .floatingInput {
+    position: absolute;
+    top: -25px;
+    left: 25%;
+    width: 50%;
+    box-shadow: 3px 4px 20px black;
+    padding-right: 7px;
+    background-color: white;
+}
+
+footer .floatingInput input {
+    width: 100%;
+    padding: 15px 50px;
+    border: none;
+    background-color: white;
+}
+
+footer .floatingInput .inputWrapper button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+footer .floatingInput .inputWrapper i {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    color: black;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header .row h2 {
+        font-size: 45px;
+    }
+
+    header .row i.fa-plus {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    header .row .row {
+        margin: 30px 0;
+        background-color: salmon;
+    }
+
+    header .row .col-12:nth-last-child(1) {
+        padding-top: 108px;
+        width: 85%;
+        margin: auto;
+    }
+
+    header .blackArrow_box {
+        width: 120px;
+        height: 100px;
+    }
+
+    header .blackBrdr_box {
+        width: 120px;
+        height: 100px;
+    }
+
+    header .row .col-12:nth-last-child(1) {
+        padding-top: 35px;
+    }
+
+    #sec-2 h2 {
+        font-size: 34px;
+        margin-top: 20px;
+    }
+
+    #sec-4 .floatingDivWrapper .row {
+        width: 100%;
+        position: static;
+        bottom: 0;
+        left: -350px;
+    }
+
+    #sec-4 .floatingDivWrapper .row .left,
+    #sec-4 .floatingDivWrapper .row .right {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #sec-4 .bg-body-secondary {
+        background-color: transparent !important;
+    }
+
+    #sec-4 {
+        padding: 0;
+    }
+
+    #sec-4 h2 {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    #sec-5 h2 {
+        font-size: 34px;
+    }
+
+    #sec-5 p {
+        font-size: 18px;
+    }
+
+
+    footer .floatingInput .inputWrapper i {
+        position: absolute;
+        left: 25px;
+        top: 13px;
+        color: black;
+    }
+
+    footer .mainButton {
+        background-color: var(--mainColor);
+        padding: 6px 16px;
+        border: none;
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    footer .floatingInput {
+        position: absolute;
+        top: -25px;
+        left: 13%;
+        width: 75%;
+        box-shadow: 3px 4px 20px black;
+        padding-right: 7px;
+        background-color: white;
+    }
+
+    footer .floatingInput input {
+        width: 100%;
+        padding: 9px 50px;
+        border: none;
+        background-color: white;
+    }
+
+    footer .row div {
+        margin-bottom: 20px;
+    }
+
+    footer .row div {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: var(--mainColor);
+        padding: 50px 0;
+        color: white;
+        position: relative;
+    }
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 578px) and (max-width: 768px) {
+    header h1 {
+        font-size: 48px;
+    }
+
+    header .row h2 {
+        font-size: 45px;
+    }
+
+    header .row i.fa-plus {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    header .row .row {
+        margin: 30px 0;
+        background-color: salmon;
+    }
+
+    header .row .col-12:nth-last-child(1) {
+        padding-top: 108px;
+        width: 85%;
+        margin: auto;
+    }
+
+    header .blackArrow_box {
+        width: 120px;
+        height: 100px;
+    }
+
+    header .blackBrdr_box {
+        width: 120px;
+        height: 100px;
+    }
+
+    header .row .col-12:nth-last-child(1) {
+        padding-top: 35px;
+    }
+
+
+
+    #sec-2 h2 {
+        font-size: 34px;
+        margin-top: 20px;
+    }
+
+    #sec-4 .floatingDivWrapper .row {
+        width: 100%;
+        position: static;
+        bottom: 0;
+        left: -350px;
+    }
+
+    #sec-4 .floatingDivWrapper .row .left,
+    #sec-4 .floatingDivWrapper .row .right {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #sec-4 .bg-body-secondary {
+        background-color: transparent !important;
+    }
+
+    #sec-4 {
+        padding: 0;
+    }
+
+    #sec-4 h2 {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    #sec-5 h2 {
+        font-size: 34px;
+    }
+
+    #sec-5 p {
+        font-size: 18px;
+    }
+
+
+    footer .floatingInput .inputWrapper i {
+        position: absolute;
+        left: 25px;
+        top: 13px;
+        color: black;
+    }
+
+    footer .mainButton {
+        background-color: var(--mainColor);
+        padding: 6px 16px;
+        border: none;
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    footer .floatingInput {
+        position: absolute;
+        top: -25px;
+        left: 13%;
+        width: 75%;
+        box-shadow: 3px 4px 20px black;
+        padding-right: 7px;
+        background-color: white;
+    }
+
+    footer .floatingInput input {
+        width: 100%;
+        padding: 9px 50px;
+        border: none;
+        background-color: white;
+    }
+
+    footer .row div {
+        margin-bottom: 20px;
+    }
+
+    footer .row div {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: var(--mainColor);
+        padding: 50px 0;
+        color: white;
+        position: relative;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    #sec-1 .row h4 {
+        font-size: 20px;
+    }
+
+    #sec-4 .floatingDivWrapper .row {
+        width: 100%;
+        position: static;
+        bottom: 0;
+        left: -350px;
+    }
+
+    #sec-4 .floatingDivWrapper .row .left,
+    #sec-4 .floatingDivWrapper .row .right {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #sec-4 .bg-body-secondary {
+        background-color: transparent !important;
+    }
+
+    #sec-4 {
+        padding: 0;
+    }
+
+    #sec-4 h2 {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    header .blackArrow_box {
+        width: 120px;
+        height: 100px;
+    }
+
+    header .blackBrdr_box {
+        width: 120px;
+        height: 100px;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    header .blackArrow_box {
+        width: 120px;
+        height: 100px;
+    }
+
+    header {
+        overflow-x: hidden;
+    }
+
+    header .blackBrdr_box {
+        width: 120px;
+        height: 100px;
+    }
+
+}
+
+@media (min-width: 1201px) {}
